@@ -27,6 +27,9 @@ See:
 After install, set the permissions to allow network clients:
  
   xQuartz -> Preferences -> Security -> Allow connections from network clients
+  
+Also, clicking behavior needs to be set:
+
   xQuartz -> Windows -> Click-through Inactive Windows
 
 ### On a mac, set defaults
@@ -106,6 +109,7 @@ The following are examples:
   run-cidd-in-docker http://front.eol.ucar.edu/displayParams/CIDD.rico
   run-cidd-in-docker http://front.eol.ucar.edu/displayParams/CIDD.timrex
 ```
+Note that if your `PATH` environment variable doesn't include the current directory, then you may need to add `.\` before `run-cidd-in-docker`, i.e.," `.\run-cidd-in-docker http://front.eol.ucar.edu/displayParams/CIDD.relampago`.
 
 ### Run using a local parameter file
 
